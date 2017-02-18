@@ -40,7 +40,8 @@ ul>li>a {
 }
 
 .active {
-
+  background-color: rgba(0, 0, 0, .06);
+  color: cadetblue;
 }
 
 .sidenav-icon {

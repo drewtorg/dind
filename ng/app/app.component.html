@@ -5,7 +5,9 @@
   <md-sidenav #sidenav mode="side" class="app-sidenav">
     <ul>
       <li *ngFor="let route of routes">
-        <a [routerLink]="route.path" routerLinkActive="active">{{route.title}}</a>
+        <a [routerLink]="route.path" 
+            routerLinkActive="active" 
+           [routerLinkActiveOptions]="{exact: true}">{{route.title}}</a>
       </li>
     </ul>
   </md-sidenav>
