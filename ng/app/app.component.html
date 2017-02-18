@@ -1,3 +1,5 @@
+<dnd-toolbar></dnd-toolbar>
+
 <md-sidenav-container class="app-container">
 
   <md-sidenav #sidenav mode="side" class="app-sidenav">
@@ -8,8 +10,9 @@
     </ul>
   </md-sidenav>
 
-  <dnd-toolbar [sidenav]="sidenav"></dnd-toolbar>
-
-    <router-outlet></router-outlet>
+  <button class="app-icon-button" (click)="sidenav.toggle()">
+    <i class="material-icons sidenav-icon">menu</i>
+  </button>
+  <router-outlet></router-outlet>
 
 </md-sidenav-container>
