@@ -5,7 +5,7 @@
   },
   "apps": [
     {
-      "root": "src/ng",
+      "root": "ng",
       "outDir": "dist",
       "assets": [
         "assets",
@@ -15,7 +15,7 @@
       "main": "main.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "app",
+      "prefix": "dnd",
       "mobile": false,
       "styles": [
         "styles.css",
@@ -50,11 +50,11 @@
     },
     "spec": {
       "class": false,
-      "component": true,
+      "component": false,
       "directive": true,
       "module": false,
-      "pipe": true,
-      "service": true
+      "pipe": false,
+      "service": false
     }
   }
 }
