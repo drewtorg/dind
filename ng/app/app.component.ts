@@ -1,12 +1,17 @@
-import {Component, Optional} from '@angular/core';
-import {MdDialog, MdDialogRef, MdSnackBar} from '@angular/material';
-
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'dnd-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.css'],
 })
 export class AppComponent {
-  isDarkTheme: boolean = false;
+  routes: any = [{
+    title: 'Home',
+    path: '/'
+  },
+  {
+    title: 'Characters',
+    path: '/characters'
+  }];
 }

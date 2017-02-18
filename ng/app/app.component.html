@@ -1,62 +1,15 @@
-<md-sidenav-layout [class.m2app-dark]="isDarkTheme">
+<md-sidenav-container class="app-container">
 
   <md-sidenav #sidenav mode="side" class="app-sidenav">
-    Sidenav
+    <ul>
+      <li *ngFor="let route of routes">
+        <a [routerLink]="route.path" routerLinkActive="active">{{route.title}}</a>
+      </li>
+    </ul>
   </md-sidenav>
 
-  <md-toolbar color="primary">
-    <button class="app-icon-button" (click)="sidenav.toggle()">
-      <i class="material-icons app-toolbar-menu">menu</i>
-    </button>
+  <dnd-toolbar [sidenav]="sidenav"></dnd-toolbar>
 
-    Better Than Roll20
+    <router-outlet></router-outlet>
 
-    <span class="app-toolbar-filler"></span>
-    <button md-button (click)="isDarkTheme = !isDarkTheme">TOGGLE DARK THEME</button>
-  </md-toolbar>
-
-  <div class="app-content">
-
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-
-  </div>
-
-</md-sidenav-layout>
+</md-sidenav-container>

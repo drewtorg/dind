@@ -19,7 +19,7 @@
       "mobile": false,
       "styles": [
         "styles.css",
-        "material2-app-theme.scss"
+        "dnd-theme.scss"
       ],
       "scripts": [],
       "environments": {
