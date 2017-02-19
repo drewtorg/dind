@@ -2,3 +2,13 @@
   z-index: 10;
   position: relative;
 }
+
+.title {
+  margin-top: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.title:hover {
+  color: rgba(0, 0, 0, .54);
+}

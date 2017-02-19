@@ -1,3 +1,6 @@
 <md-toolbar color="primary" class="md-elevation-z6 toolbar">
-  Better Than Roll20
+  <nav>
+    <a class="title" routerLink="/">Better Than Roll20</a>
+    <button md-button *ngFor="let route of routes" [routerLink]="route.path">{{route.title}}</button>
+  </nav>
 </md-toolbar>

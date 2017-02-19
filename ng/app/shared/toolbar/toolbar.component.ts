@@ -6,4 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./toolbar.component.css']
 })
 export class ToolbarComponent {
+  @Input() routes: any;
 }

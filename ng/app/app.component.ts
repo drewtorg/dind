@@ -7,11 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   routes: any = [{
-    title: 'Home',
-    path: '/'
-  },
-  {
-    title: 'Characters',
+    title: 'CHARACTERS',
     path: '/characters'
   }];
 }
